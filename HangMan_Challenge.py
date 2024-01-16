@@ -21,21 +21,19 @@ for letter in secret_word:
 print(display_word)
 
 # Create a variable as an int starting at 0 and when it gets to the number 7 the game ends
-
 # 1 use a while loop so your game keeps going the word has been guessed 
+# ask the user to guess a letter
+# Bonus make the program take the input from the user and make it lowercase
 num = 0
 game_over = False
 while not game_over:
 
-# ask the user to guess a letter
     guess = input("Guess the Letter\n").lower() 
 
-# Bonus make the program take the input from the user and make it lowercase
-# Check if the letter is in the word 
-
-# Loop through each of the letters in the choosen word
-# if the letter is in the word replace the "_" with the letter 
-# it should look like this "_","a","c","_","_","r"
+    # Check if the letter is in the word 
+    # Loop through each of the letters in the choosen word
+    # if the letter is in the word replace the "_" with the letter 
+    # it should look like this "_","a","c","_","_","r"
 
     for position in range(len(secret_word)):
         letter = secret_word[position]
